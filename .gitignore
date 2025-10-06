@@ -1,0 +1,73 @@
+# Azure Front Door Structure Analysis - .gitignore
+
+# ===================================
+# Test Files and Data
+# ===================================
+# Ignore the entire Tests folder containing JSON exports
+# But allow the Tests/README.md file to be tracked
+Tests/*
+!Tests/README.md
+
+# Ignore any JSON files that might contain sensitive data
+*.json
+*.txt
+
+# ===================================
+# Backup Files
+# ===================================
+# Ignore backup files
+*-OLD-BACKUP.*
+*-new.*
+*.bak
+*.backup
+
+# ===================================
+# PowerShell
+# ===================================
+# PowerShell session state
+*.psess
+
+# ===================================
+# Operating System Files
+# ===================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ===================================
+# IDEs and Editors
+# ===================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains IDEs (Rider, IntelliJ, etc.)
+.idea/
+*.iml
+
+# ===================================
+# Logs and Temporary Files
+# ===================================
+*.log
+*.tmp
+*.temp
